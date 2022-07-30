@@ -18,7 +18,7 @@ const Home = ({articles} : any) => {
   return (
     <div>
       <Head>
-        <title>Bechera's shoes wishlist</title>'
+        <title>Bechera &#39; shoes wishlist</title>
         <meta name="shoes" content='shoes,fashion,programming'/>
       </Head>
     <ArticleList articles={articles}/>

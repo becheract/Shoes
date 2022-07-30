@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
     <h1 className={headerStyles.title}>
-        <span>Bechera's </span> shoe wishlist
+        <span>Bechera&#39;s </span> shoe wishlist
     </h1>
     <p>The shoe wishlist of Bechera Chapman-Tremblay</p>
     </>
