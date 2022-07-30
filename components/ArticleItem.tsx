@@ -10,7 +10,7 @@ export default function ArticleItem({article} : any) {
         <a className={articleStyles.card}>
             <h3>{article.title} &rarr;</h3>
             <p>{article.body}</p>
-            </a>
+        </a>
     </Link>
   )
 }

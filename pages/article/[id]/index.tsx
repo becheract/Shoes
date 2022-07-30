@@ -1,5 +1,7 @@
 import {useRouter} from 'next/router'
 import Link from 'next/link'
+import {server} from '../../../config'
+import Meta from '../../../components/Meta'
 export default function article({article} : any) {
     // const router = useRouter()
     // const {id} = router.query
@@ -7,6 +9,7 @@ export default function article({article} : any) {
    
   return (
     <>
+    <Meta title={article.title} />
     <h1>{article.title}</h1>
     <p>{article.body}</p>
        <br/>
@@ -16,19 +19,19 @@ export default function article({article} : any) {
 }
 
 export const getStaticProps = async (context : any) => {
-    
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
-    const article = await res.json()
 
+    const res = await fetch(`${server}/api/articles/${context.params.id}`)
+    const articles = await res.json()
+  
     return {
-        props: {
-            article
-        }
+      props: {
+        articles,
+      },
     }
-}
+  }
 
-export const getStaticPaths = async () => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/`)
+export const getStaticPaths = async (context : any) => {
+    const res = await fetch(`${server}/api/articles/${context.params.id}`)
     const articles = await res.json()
 
     const ids = articles.map((article : any) => article.id)
