@@ -17,5 +17,4 @@ export const articles = [
         image : 'https://imgs.search.brave.com/zemc4CP44kFI91E8briwJQN0P20f_G2UWIZ6wxMDn0M/rs:fit:736:736:1/g:ce/aHR0cHM6Ly9zLW1l/ZGlhLWNhY2hlLWFr/MC5waW5pbWcuY29t/LzczNngvMzgvMzUv/ZDcvMzgzNWQ3ODQ1/NWQ2MmNmYzdhMzc0/MDk2M2MzYWRhYTYu/anBn',
         body : 'These men’s Nike Air Monarch IV training shoes are built for comfort and durability in leather with breathable perforations and tongues. Full-length foam midsoles and Nike Air-Soles support the feet with every stride you take. These sport shoes have durable solid rubber outsoles with flex grooves in the forefoot area which allow you to move your feet naturally. They also provide good traction on varied surfaces. '
     },
-
 ]

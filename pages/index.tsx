@@ -1,23 +1,12 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+
 import ArticleList from '../components/ArticleList'
 import {server} from '../config'
 //for metatags,custom titles, keywords, descriptions
-type article = {
-  body: string,
-  id: number,
-  title: string,
-  userId: number
-}
 
-type articles = {
-  articles: article[]
-}
 const Home = ({articles} : any) => {
-  console.log(articles)
+  
   return (
     <div>
-
     <ArticleList articles={articles}/>
     </div>
   )

@@ -30,17 +30,17 @@ export const getStaticProps = async (context : any) => {
     }
   }
 
-export const getStaticPaths = async (context : any) => {
-    const res = await fetch(`${server}/api/articles/${context.params.id}`)
+export const getStaticPaths = async () => {
+    const res = await fetch(`${server}/api/articles/`)
     const articles = await res.json()
 
     const ids = articles.map((article : any) => article.id)
 
-    const paths = ids.map((id : string) => ({params: {id: id.toString()}}))
+    const paths = ids.map((id : any) => ({params: {id: id.toString()}}))
     
     return {
         paths,
-        fallback: false
+        fallback: false,
     }
 
 }
