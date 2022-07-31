@@ -1,7 +1,7 @@
 
 import {articles} from '../../../data'
-
-const handler = ({query: {id}}:any, res :any) => {
+import {  Response } from 'express';
+const handler = ({query: {id}} : any, res :Response) => {
     const filtered = articles.filter((article) => article.id === id)
 
         if(filtered.length > 0) {

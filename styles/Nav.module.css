@@ -1,7 +1,9 @@
 .nav {
   height: 50px;
+  margin: 0;
   padding: 10px;
-  background: #000;
+  width: 100vw;
+  background: #07070a;
   color: #fff;
   display: flex;
   align-items: center;
@@ -17,4 +19,10 @@
 
 .nav ul li a {
   margin: 5px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover{
+  color: #0070f3;
 }
