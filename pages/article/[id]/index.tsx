@@ -15,7 +15,7 @@ const article = ({ article } : any) => {
     <div className={articleStyles.article}>
       <Meta title={article.title}/>
       <h1>{article.title}</h1>
-      <img src={article.image} className={articleStyles.img}/>
+   
       <p className={articleStyles.p}>{article.body}</p>
       <br />
       <button className={articleStyles.button}>
